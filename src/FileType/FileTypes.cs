@@ -30,9 +30,8 @@ public static class FileTypes
 
         new FileType_Image(), // Image
     };
-
     public static IFileType[] GetFileTypes() => _fileTypes;
-
+    
     public static IFileType? FindFileType(string filePath)
     {
         string ext = Path.GetExtension(filePath).ToLowerInvariant();
