@@ -20,17 +20,14 @@ public static class FileTypes
         new FileType_ScratchDrive(), // Scratch Drive
         new FileType_PAK(), // PS2 Pack
         new FileType_PS2(), // PS2 Texture
-
         new FileType_INI(), // Initialization
         new FileType_VSH(), // Vertex Shader
         new FileType_ATX(), // Texture Animation
         new FileType_TXT(), // Text
         new FileType_ASD(), // Animation Actions
         new FileType_LUA(), // Script
-
         new FileType_Image(), // Image
     };
-
     public static IFileType[] GetFileTypes() => _fileTypes;
 
     public static IFileType? FindFileType(string filePath)
